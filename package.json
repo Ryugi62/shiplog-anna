@@ -1,0 +1,18 @@
+{
+  "name": "shiplog-anna",
+  "version": "1.0.0",
+  "private": true,
+  "description": "ShipLog for Anna AI OS: turn this week's commits into an X post, a LinkedIn update and a changelog, with every number checked against your log.",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "test": "vitest run",
+    "validate": "anna-app validate --strict",
+    "check": "anna-app validate --strict && vitest run"
+  },
+  "devDependencies": {
+    "@anna-ai/cli": "0.1.53",
+    "jsdom": "^25.0.0",
+    "vitest": "^3.2.0"
+  }
+}

@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="ShipLog">
+  <rect width="256" height="256" rx="56" fill="#1B64DA"/>
+  <g fill="none" stroke="#FFFFFF" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M78 64h76l28 28v100H78z" stroke-width="14" fill="#1B64DA"/>
+    <path d="M154 64v28h28" stroke-width="14"/>
+    <path d="M100 124h58M100 152h36" stroke-width="14"/>
+  </g>
+  <circle cx="182" cy="182" r="34" fill="#FFFFFF"/>
+  <path d="M166 182l11 11 22-24" fill="none" stroke="#1B64DA" stroke-width="12" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

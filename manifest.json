@@ -1,0 +1,38 @@
+{
+  "schema": 2,
+  "required_executas": [],
+  "host_capabilities": ["llm.complete", "aps.kv"],
+  "system_prompt_addendum": "ShipLog turns a builder's weekly commits or notes into three ready-to-post drafts (an X post, a LinkedIn post and a changelog) and checks every number in them against the user's own log. When the user asks for a weekly update, a build-in-public post, release notes or a changelog from their work, call open_app_view for ShipLog with payload {\"notes\": \"<the commit lines or notes the user gave, verbatim>\", \"projectName\": \"<project name if the user gave one>\"}, then tell the user to press \"Write my 3 drafts\" in the window. Do not invent commits or numbers.",
+  "tags": ["build-in-public", "changelog", "release-notes", "developer-tools", "writing"],
+  "ui": {
+    "form_factors": ["desktop", "mobile"],
+    "bundle": {
+      "format": "static-spa",
+      "entry": "index.html",
+      "external_origins": ["https://api.github.com"]
+    },
+    "views": [
+      {
+        "name": "main",
+        "title": "ShipLog",
+        "default": true,
+        "min_size": { "w": 320, "h": 480 },
+        "default_size": { "w": 560, "h": 780 },
+        "max_size": { "w": 1280, "h": 1600 },
+        "single_instance": true,
+        "icon": "icon.svg"
+      }
+    ],
+    "host_api": {
+      "llm": ["complete"],
+      "storage": ["get", "set", "delete", "list"],
+      "chat": ["append_artifact"],
+      "window": ["set_title"]
+    },
+    "csp_overrides": {}
+  },
+  "dev": {
+    "seed_storage": {},
+    "user_id": 1
+  }
+}
