@@ -8,6 +8,7 @@
   "changelog": "First release: X post, LinkedIn post and changelog from your commits or notes; number check against your log; import from a public GitHub repo; 3 tones and 9 output languages; weekly history and streak.",
   "logo_file": "assets/logo-512.png",
   "screenshots": [
+    "assets/screenshot-2-result.png",
     "assets/screenshot-1-input.png"
   ],
   "homepage_url": "https://github.com/Ryugi62/shiplog-anna",
